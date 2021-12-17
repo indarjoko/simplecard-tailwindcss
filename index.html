@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Indonesian Travel Website</title>
+    <link href="https://unpkg.com/tailwindcss@2.2.4/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
+    <div class="xl:w-1/3 md:w-1/2 p-36">
+    <div class="
+        c-card
+        block
+        bg-white
+        shadow-md
+        hover:shadow-xl
+        rounded-lg
+        overflow-hidden">
+      <img
+        class="
+          lg:h-60
+          xl:h-56
+          md:h-64
+          sm:h-72
+          xs:h-72
+          h-72
+          rounded
+          w-full
+          object-cover object-center
+          mb-4
+        "
+        src="https://images.unsplash.com/photo-1578494688088-8260d62a79c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+        alt="Image Size 720x400"
+      />
+      <div class="p-4">
+        <h3
+          class="tracking-widest text-indigo-500 text-xs font-medium title-font"
+        >
+          Water Spot
+        </h3>
+        <h2
+          class="
+            text-lg text-gray-900
+            font-medium
+            title-font
+            mb-4
+            my-1
+            whitespace-nowrap
+            truncate
+            ...
+          "
+        >
+          Beautiful Waterfall in Bali Islands
+        </h2>
+        <p
+          class="
+            text-gray-600
+            font-light
+            text-md
+            whitespace-nowrap
+            truncate
+            ...
+          "
+        >
+          This place is one of wonderful place in Bali, natural waterfall with beautiful view.
+          <br />
+          <button id="buttonmodal" class="focus:outline-none my-8 font-medium text-blue-700" type="button">Explore</button>
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="modal"
+    class="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-blue-500 bg-opacity-50 transform scale-0 transition-transform duration-300">
+    <!-- Modal content -->
+    <div class="bg-white w-1/2 h-1/2 p-12"> 
+        <!--Close modal button-->
+        <button id="closebutton" type="button" class="focus:outline-none">
+            <!-- Hero icon - close button -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </button>
+        <!-- Test content -->
+        <img class="
+        lg:h-60
+        xl:h-56
+        md:h-64
+        sm:h-72
+        xs:h-72
+        h-72
+        rounded
+        w-full
+        object-cover object-center
+        mb-4 my-4" src="https://images.unsplash.com/photo-1578494688088-8260d62a79c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"</img>
+        
+        <h2 class="font-medium text-black my-4">Beautiful Waterfall in Bali Islands<h2>
+        
+        <p class="font-light text-gray-600  ">
+          This place is one of wonderful place in Bali, natural waterfall with beautiful view.
+        </p>
+    </div>
+</div>
+
+<script> 
+    const button = document.getElementById('buttonmodal')
+    const closebutton = document.getElementById('closebutton')
+    const modal = document.getElementById('modal')
+
+    button.addEventListener('click',()=>modal.classList.add('scale-100'))
+    closebutton.addEventListener('click',()=>modal.classList.remove('scale-100'))
+</script>
+
+
+
+  <div class="xl:w-1/3 md:w-1/2 p-36">
+    <div class="
+        c-card
+        block
+        bg-white
+        shadow-md
+        hover:shadow-xl
+        rounded-lg
+        overflow-hidden">
+      <img
+        class="
+          lg:h-60
+          xl:h-56
+          md:h-64
+          sm:h-72
+          xs:h-72
+          h-72
+          rounded
+          w-full
+          object-cover object-center
+          mb-4
+        "
+        src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+        alt="Image Size 720x400"
+      />
+      <div class="p-4">
+        <h3
+          class="tracking-widest text-indigo-500 text-xs font-medium title-font"
+        >
+          Mountain Spot
+        </h3>
+        <h2
+          class="
+            text-lg text-gray-900
+            font-medium
+            title-font
+            mb-4
+            my-1
+            whitespace-nowrap
+            truncate
+            ...
+          "
+        >
+          Bromo Mountain
+        </h2>
+        
+        <button id="buttonmodal" class="focus:outline-none my-8 font-medium text-blue-700" type="button">Explore</button>
+       
+      </div>
+    </div>
+  </div>
+
+
+  <div id="modal"
+    class="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-blue-500 bg-opacity-50 transform scale-0 transition-transform duration-300">
+    <!-- Modal content -->
+    <div class="bg-white w-1/2 h-1/2 p-12"> 
+        <!--Close modal button-->
+        <button id="closebutton" type="button" class="focus:outline-none">
+            <!-- Hero icon - close button -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </button>
+        <!-- Test content -->
+        <img class="
+        lg:h-60
+        xl:h-56
+        md:h-64
+        sm:h-72
+        xs:h-72
+        h-72
+        rounded
+        w-full
+        object-cover object-center
+        mb-4" src="https://images.unsplash.com/photo-1578494688088-8260d62a79c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"</img>
+        <p>
+          This place is one of wonderful place in Bali, natural waterfall with beautiful view.
+        </p>
+    </div>
+</div>
+
+<script> 
+    const button = document.getElementById('buttonmodal')
+    const closebutton = document.getElementById('closebutton')
+    const modal = document.getElementById('modal')
+
+    button.addEventListener('click',()=>modal.classList.add('scale-100'))
+    closebutton.addEventListener('click',()=>modal.classList.remove('scale-100'))
+</script>
+
+
+
+  <div class="xl:w-1/3 md:w-1/2 p-36">
+    <div class="
+        c-card
+        block
+        bg-white
+        shadow-md
+        hover:shadow-xl
+        rounded-lg
+        overflow-hidden">
+      <img
+        class="
+          lg:h-60
+          xl:h-56
+          md:h-64
+          sm:h-72
+          xs:h-72
+          h-72
+          rounded
+          w-full
+          object-cover object-center
+          mb-4
+        "
+        src="https://images.unsplash.com/photo-1626585825223-ac4a58afb411?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+        alt="Image Size 720x400"
+      />
+      <div class="p-4">
+        <h3
+          class="tracking-widest text-indigo-500 text-xs font-medium title-font"
+        >
+          Forest Spot
+        </h3>
+        <h2
+          class="
+            text-lg text-gray-900
+            font-medium
+            title-font
+            mb-4
+            my-1
+            whitespace-nowrap
+            truncate
+            ...
+          "
+        >
+          Wonderful Forest in Yogyakarta
+        </h2>
+        <p
+          class="
+            text-gray-600
+            font-light
+            text-md
+            whitespace-nowrap
+            truncate
+            ...
+          "
+        >
+          Cool Forest with Beautiful View in Yogyakarta.
+          <br />
+          <button id="buttonmodal" class="focus:outline-none my-8 font-medium text-blue-700" type="button">Explore</button>
+        </p>
+
+
+        <div id="modal"
+    class="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-blue-500 bg-opacity-50 transform scale-0 transition-transform duration-300">
+    <!-- Modal content -->
+    <div class="bg-white w-1/2 h-1/2 p-12"> 
+        <!--Close modal button-->
+        <button id="closebutton" type="button" class="focus:outline-none">
+            <!-- Hero icon - close button -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </button>
+        <!-- Test content -->
+        <img class="
+        lg:h-60
+        xl:h-56
+        md:h-64
+        sm:h-72
+        xs:h-72
+        h-72
+        rounded
+        w-full
+        object-cover object-center
+        mb-4" src="https://images.unsplash.com/photo-1578494688088-8260d62a79c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"</img>
+        <p>
+          This place is one of wonderful place in Bali, natural waterfall with beautiful view.
+        </p>
+    </div>
+</div>
+
+<script> 
+    const button = document.getElementById('buttonmodal')
+    const closebutton = document.getElementById('closebutton')
+    const modal = document.getElementById('modal')
+
+    button.addEventListener('click',()=>modal.classList.add('scale-100'))
+    closebutton.addEventListener('click',()=>modal.classList.remove('scale-100'))
+</script>
+
+        <div class="flex items-center mt-2">
+          <img
+            class="w-10 h-10 object-cover rounded-full"
+            alt="User avatar"
+            src="https://i.pravatar.cc/200"
+          />
+
+          <div class="pl-3">
+            <div class="font-medium">Michael Matt</div>
+            <div class="text-gray-600 text-sm">Travel Blogger</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>
